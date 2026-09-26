@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Source material: full-resolution exports kept locally, never served by the site.
+# Everything the site actually uses lives in assets/ and is already optimised.
+assets copy/
+wireframes/
+
+# Local tooling
+node_modules/
+*.log
