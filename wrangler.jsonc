@@ -1,0 +1,10 @@
+{
+  // Static site served by Cloudflare Workers (static assets, no server code).
+  // There is no "main" entry point on purpose: this is an assets-only Worker.
+  "name": "portfolio",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
