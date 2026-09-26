@@ -1,54 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page not found · Moises Rander</title>
+  <title>Página não encontrada · Moises Rander</title>
   <meta name="robots" content="noindex">
-  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="/assets/img/favicon-32.png" sizes="32x32">
   <meta name="theme-color" content="#0e0e11">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Sans+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- Self-contained on purpose: a 404 can be served from any path, so it
+       cannot rely on relative asset URLs resolving correctly. -->
   <style>
-    .nf {
-      min-height: 80vh;
+    :root {
+      color-scheme: dark;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
       display: grid;
       place-content: center;
+      gap: 20px;
       text-align: center;
-      gap: var(--space-5);
+      padding: 24px;
+      background: #0e0e11;
+      color: #e9ecf3;
+      font-family: "Noto Sans", ui-sans-serif, system-ui, sans-serif;
+      background-image: radial-gradient(
+        700px 420px at 50% -10%,
+        rgba(124, 58, 237, 0.28),
+        transparent 62%
+      );
     }
 
-    .nf .code {
-      font-family: var(--font-mono);
+    .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 13px;
-      letter-spacing: 0.12em;
-      color: var(--primary-text);
+      letter-spacing: 0.14em;
+      color: #b9a4ff;
     }
 
-    .nf h1 {
-      font-size: clamp(28px, 4vw, 40px);
-    }
-
-    .nf p {
-      color: var(--muted-foreground);
+    h1 {
       margin: 0;
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0;
+      color: #a9b0c4;
+      font-size: 16px;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      height: 44px;
+      padding: 0 22px;
+      border-radius: 999px;
+      background: #5b2ee5;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    a:hover {
+      background: #6d44ef;
     }
   </style>
 </head>
 
 <body>
-  <main class="container nf">
-    <div class="code">404</div>
-    <h1>Esta página não existe</h1>
-    <p>O endereço pode ter mudado, ou o link estar incompleto.</p>
-    <p><a class="btn btn-primary" href="/">Voltar para o início</a></p>
-  </main>
+  <div class="code">404</div>
+  <h1>Esta página não existe</h1>
+  <p>O endereço pode ter mudado, ou o link estar incompleto.</p>
+  <a href="/">Voltar para o início</a>
 </body>
 
 </html>
