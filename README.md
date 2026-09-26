@@ -12,7 +12,8 @@ js/main.js                 Language toggle, gallery tabs, lightbox, scroll revea
 assets/img/case-40/screens/   51 gallery screens (17 app · 17 desktop · 17 responsive), device mockups from Figma
 assets/img/case-40/diagrams/  Campaign mechanics diagram (exported from Figma)
 assets/img/case-40/flow/      Phone screens used by the user-flow scroller
-assets/cv/                 Résumé PDFs: moises-rander-cv-en.pdf · moises-rander-cv-pt.pdf
+assets/cv/                 Résumé PDFs served by the download buttons
+cv-source/                 HTML sources for the résumés; regenerate the PDFs from them
 wireframes/                Original 65 PNG frames (source only — not referenced by the site)
 "assets copy"/             Full-resolution Figma exports, 166 MB (source only — keep out of git)
 ```
@@ -52,7 +53,13 @@ To add an icon, copy the `<path>`s from [lucide.dev](https://lucide.dev) into a 
 
 - **Bilingual content**: every text node exists twice, tagged `lang="en"` and `lang="pt"`. CSS hides the inactive one based on `<html lang>`. EN is the default; the choice is saved in `localStorage`.
 - **Theme**: dark only — no toggle, no light tokens. If a light mode is ever wanted, re-export the `:root` block from the shadcn preset.
-- **Résumé**: the download buttons pick `assets/cv/moises-rander-cv-en.pdf` or `-pt.pdf` by the active language. Keep both files updated together.
+- **Résumé**: the download buttons pick `assets/cv/moises-rander-cv-en.pdf` or `-pt.pdf` by the active language. Edit `cv-source/cv-pt.html` / `cv-en.html` and regenerate both PDFs with:
+  ```
+  python3 -m http.server 8765
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+    --no-pdf-header-footer --print-to-pdf=assets/cv/moises-rander-cv-pt.pdf \
+    http://localhost:8765/cv-source/cv-pt.html
+  ```
 - **Adding a case**: duplicate `case-aniversario-40.html`, add a new `.case-card` block in `index.html#work`, drop optimized images in `assets/img/<case>/`.
 - **Case diagrams**: images in `assets/img/case-40/diagrams/` come from Figma. Export at 2–3x the display size; they are Portuguese-only by choice (the language the product was designed in) and the surrounding copy carries the translation.
 - **User flow**: the `.flow-track` scroller on the case page is a flex row with scroll snapping that stacks vertically below 760px. Its `scroll-padding-inline` must match `padding-inline`, otherwise the browser snaps away from the start on load. Edge fades are toggled by `can-left` / `can-right` in `js/main.js`.

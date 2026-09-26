@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Currículo — Moises Rander</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 0;
+  }
+
+  .page {
+    width: 210mm;
+    margin: 0 auto;
+    padding: 18mm 18mm 18mm 18mm;
+    background: #fff;
+  }
+
+  .header { margin-bottom: 18px; }
+  .header h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #0f0f0f;
+    line-height: 1.15;
+    margin-bottom: 3px;
+  }
+  .header .title-line {
+    font-size: 10pt;
+    font-weight: 500;
+    color: #2563eb;
+    margin-bottom: 7px;
+    letter-spacing: 0.02em;
+  }
+  .header .contacts {
+    font-size: 9.5pt;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 4px;
+  }
+  .header .contacts span { color: #bbb; }
+  .header .contacts a { color: #444; text-decoration: none; }
+
+  .divider {
+    border: none;
+    border-top: 1.5px solid #2563eb;
+    margin: 12px 0 16px;
+  }
+
+  .section { margin-bottom: 18px; }
+  .section-title {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #2563eb;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .about p { font-size: 10pt; color: #333; line-height: 1.6; }
+
+  .job { margin-bottom: 14px; }
+  .job:last-child { margin-bottom: 0; }
+  .job-header { margin-bottom: 2px; }
+  .job-title { font-size: 10.5pt; font-weight: 600; color: #111; }
+  .job-company { font-size: 9.5pt; color: #2563eb; font-weight: 500; }
+  .job-period { font-size: 9pt; color: #777; margin-top: 1px; margin-bottom: 6px; }
+  .job ul { list-style: none; padding: 0; }
+  .job ul li {
+    font-size: 10pt;
+    color: #333;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
+  .job ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  .edu-item { margin-bottom: 11px; }
+  .edu-item:last-child { margin-bottom: 0; }
+  .edu-institution { font-size: 10.5pt; font-weight: 600; color: #111; }
+  .edu-degree { font-size: 9.5pt; color: #2563eb; font-weight: 500; }
+  .edu-period { font-size: 9pt; color: #777; }
+  .edu-tcc { font-size: 9pt; color: #888; font-style: italic; margin-top: 1px; }
+
+  .cert-list { list-style: none; padding: 0; }
+  .cert-list li {
+    font-size: 10pt;
+    color: #333;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  .cert-list li::before { content: '\2022'; position: absolute; left: 0; color: #2563eb; }
+
+  .skills-table { width: 100%; border-collapse: collapse; }
+  .skills-table tr { vertical-align: top; }
+  .skills-table td { font-size: 10pt; padding: 3px 0; line-height: 1.5; }
+  .skills-table td:first-child {
+    font-weight: 600;
+    color: #111;
+    width: 38%;
+    padding-right: 12px;
+    white-space: nowrap;
+  }
+  .skills-table td:last-child { color: #333; }
+
+  .job, .edu-item, .cert-list li { break-inside: avoid; }
+  .section-title { break-after: avoid; }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 14mm 16mm; margin: 0; width: 100%; box-shadow: none; }
+    a { color: inherit; text-decoration: none; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>Moises Rander da Silva Oliveira</h1>
+    <div class="title-line">Analista de UX Pleno · Product Designer</div>
+    <div class="contacts">
+      <a href="mailto:moisesrander@outlook.com">moisesrander@outlook.com</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/moisesrander">linkedin.com/in/moisesrander</a>
+      <span>·</span>
+      <a href="https://github.com/Moises-Rander">github.com/Moises-Rander</a>
+      <span>·</span>
+      <a href="https://moises-rander.github.io/portfolio/">moises-rander.github.io/portfolio</a>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section about">
+    <div class="section-title">Sobre</div>
+    <p>Profissional de tecnologia com mais de 2 anos de experiência no hub de inovação do maior grupo varejista do
+    Norte/Nordeste do Brasil (Grupo Mateus). Atuei de forma acumulada como QA, desenvolvedor backend, analista de
+    negócios e designer de produto, sempre sendo o elo entre as dores dos clientes e as soluções entregues.
+    Tenho proficiência avançada em Figma, experiência com design systems, prototipação de alta fidelidade e
+    condução de fluxos end-to-end de produto. Atualmente Analista de UX Pleno, com pós-graduação em andamento em
+    Arquitetura de Software (FIAP/Postech).</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experiência Profissional</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Analista de UX Pleno</div>
+        <div class="job-company">Pulse — Hub de Tecnologia e Inovação do Grupo Mateus · São Luís, MA</div>
+        <div class="job-period">setembro 2026 – presente</div>
+      </div>
+      <ul>
+        <li>Responsável pela estratégia e execução de UX/UI de produtos do ecossistema Mateus Mais, cobrindo B2C (e-commerce), B2B (força de vendas) e painéis operacionais internos.</li>
+        <li>Criação de protótipos de alta fidelidade no Figma, do wireframe ao design system, com domínio de auto layout, variáveis, componentes e instâncias.</li>
+        <li>Prototipação orientada por documentação técnica: análise de contratos de APIs e endpoints de parceiros terceiros para definir estrutura e conteúdo das telas.</li>
+        <li>Condução de fluxos end-to-end de produto: da identificação de dores com stakeholders à especificação e acompanhamento do desenvolvimento.</li>
+        <li>Desenvolvimento de funcionalidades front-end para o Mateus Mais utilizando ferramentas de IA (Claude Code e Codex) em Angular.</li>
+        <li>Participação ativa em cerimônias ágeis (Scrum e Kanban): planning, review, retrospectiva.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Analista de Negócios / Product Designer</div>
+        <div class="job-company">Pulse — Hub de Tecnologia e Inovação do Grupo Mateus · São Luís, MA</div>
+        <div class="job-period">agosto 2024 – agosto 2026</div>
+      </div>
+      <ul>
+        <li>Atuação com escopo próximo ao de Product Owner: participação em reuniões com gerentes, diretores e presidente do Grupo Mateus, representando o Mateus Mais.</li>
+        <li>Levantamento autônomo de requisitos diretamente com clientes e stakeholders internos, identificando dores e traduzindo-as em soluções de produto.</li>
+        <li>Preenchimento de lacuna de design no time: responsável por toda a frente visual de novos produtos em períodos sem designer alocado, criando fluxos, wireframes e protótipos funcionais para desenvolvimento e apresentação a clientes.</li>
+        <li>Briefing com desenvolvedores e acompanhamento de ciclo completo: especificação, desenvolvimento, testes, homologação e apresentação ao cliente.</li>
+        <li>Treinamentos para operadores e vendedores do Grupo Mateus em todas as regionais (MA, PA, PI, CE, PE, BA, TO, RE), com sessões online de até 60 participantes simultâneos e presenciais de até 30 pessoas.</li>
+        <li>Projeto especial (ago–out 2024): emprestado ao time de RH do Grupo para validação e treinamento do novo sistema Oracle de gestão de colaboradores.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Estagiário — QA &amp; Desenvolvedor Backend</div>
+        <div class="job-company">Pulse — Hub de Tecnologia e Inovação do Grupo Mateus · São Luís, MA</div>
+        <div class="job-period">março 2024 – agosto 2024</div>
+      </div>
+      <ul>
+        <li>Testes end-to-end, regressivos, de carga (JMeter e Locust) e automatizados (Cypress e Selenium) para releases do Mateus Mais.</li>
+        <li>Desenvolvimento backend em Django e FastAPI: contribuição em tasks do módulo "Contas", responsável pela gestão de todos os usuários do ecossistema Mateus Mais (e-commerce B2C, PDV, força de vendas, dark store, venda balcão e parceiros).</li>
+        <li>Familiaridade técnica com AWS, APIs REST, JWT, Git e stack Angular no frontend.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Educação</div>
+
+    <div class="edu-item">
+      <div class="edu-institution">FIAP / Postech</div>
+      <div class="edu-degree">Pós-Graduação em Arquitetura de Software</div>
+      <div class="edu-period">2025 – em andamento</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-institution">Centro Universitário UNDB — São Luís, MA</div>
+      <div class="edu-degree">Bacharelado em Engenharia de Software</div>
+      <div class="edu-period">2020 – 2024 · Concluído em 2024.2</div>
+      <div class="edu-tcc">TCC: Testes de Software — Garantindo a Qualidade no Desenvolvimento de Sistemas</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-institution">Centro Universitário UNDB — São Luís, MA</div>
+      <div class="edu-degree">Bacharelado em Sistemas de Informação</div>
+      <div class="edu-period">2020 – 2024 · Concluído em 2024.1</div>
+      <div class="edu-tcc">TCC: Automação Residencial — Explorando a Aplicação da IoT na Automação de Residências</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-institution">Lincoln B. Johnson School — Barranquilla, Colômbia</div>
+      <div class="edu-degree">Ensino Fundamental (imersão em inglês)</div>
+      <div class="edu-period">2009 – 2012</div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-institution">American School — Barranquilla, Colômbia</div>
+      <div class="edu-degree">Ensino Fundamental (imersão em espanhol)</div>
+      <div class="edu-period">2009</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Cursos e Certificações</div>
+    <ul class="cert-list">
+      <li><strong>Alura</strong> · UX Design — Processo e fundamentos do design de experiência do usuário</li>
+      <li><strong>Alura</strong> · Figma — Do básico ao design system avançado (auto layout, variáveis, componentes)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Habilidades</div>
+    <table class="skills-table">
+      <tr><td>Design &amp; Prototipação</td><td>Figma (avançado), Design System, Auto Layout, Variáveis, FigJam, Miro, Canva</td></tr>
+      <tr><td>Metodologias</td><td>Scrum, Kanban, Cerimônias Ágeis, Discovery, Briefing, Escopo de Produto</td></tr>
+      <tr><td>Qualidade &amp; Testes</td><td>Testes End-to-End, Regressivos, Carga (JMeter, Locust), Cypress, Selenium</td></tr>
+      <tr><td>Desenvolvimento</td><td>Django, FastAPI, Angular (consumo/leitura), APIs REST, JWT, AWS, Git</td></tr>
+      <tr><td>IA Aplicada</td><td>Claude Code, OpenAI Codex — desenvolvimento assistido por IA</td></tr>
+      <tr><td>Idiomas</td><td>Português (nativo) · Inglês (avançado) · Espanhol (avançado)</td></tr>
+    </table>
+  </div>
+</div>
+</body>
+</html>
